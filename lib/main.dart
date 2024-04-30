@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
+
 import 'package:meals_app/screens/categories.dart';
 
 //Overwriting the default text theme
@@ -23,8 +24,8 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: theme,
-      home: const CategoriesScreen(),
-    );
+        theme: theme,
+        home: const CategoriesScreen() //outputting the category screen
+        );
   }
 }
