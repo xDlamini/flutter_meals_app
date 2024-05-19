@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:meals_app/screens/categories.dart';
+// import 'package:meals_app/screens/categories.dart';
+import 'package:meals_app/screens/tabs.dart';
 
 //Overwriting the default text theme
 final theme = ThemeData(
@@ -24,8 +25,10 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: theme,
-        home: const CategoriesScreen() //outputting the category screen
-        );
+      theme: theme,
+      home:
+          const TabsScreen(), //initially showing the Tab screen to the Home screen
+      // home: const CategoriesScreen() //outputting the category screen
+    );
   }
 }
